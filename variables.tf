@@ -5,7 +5,7 @@ variable "template_org" {
 
 variable "template_repo" {
   description = "The name of the repository in Github that contains the example app code."
-  default     = "terraform-github-static-app"
+  default     = "waypoint-tutorial"
 }
 
 variable "destination_org" {
