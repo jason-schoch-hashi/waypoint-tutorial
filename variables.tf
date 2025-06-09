@@ -10,7 +10,7 @@ variable "template_repo" {
 
 variable "destination_org" {
   description = "The name of the organization in Github that will contain the templated repo."
-  default     = "waypoint-repo"
+  default     = "waypoint-r"
 }
 
 variable "gh_token" {
@@ -31,4 +31,9 @@ variable "waypoint_application" {
     condition     = !contains(["-", "_"], var.waypoint_application)
     error_message = "waypoint_application must not contain dashes or underscores."
   }
+}
+variable "fakepassword" {
+  description = "This is a test for my Vault Radar "
+  default = "ghp_ZYS83QC8KHtmVHjoF7VuSUwB2RtxNF3uhIY"
+
 }
